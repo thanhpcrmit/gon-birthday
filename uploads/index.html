@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiệp mời sinh nhật Gòn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Fredoka:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="floating floating-star"></div>
+      <div class="floating floating-balloon"></div>
+      <div class="floating floating-cloud"></div>
+
+      <main class="invite-card">
+        <section class="hero">
+          <div class="top-ribbon">Thân mời bạn</div>
+          <div class="hero-head">
+            <div class="hero-title-wrap">
+              <p class="eyebrow">Sinh nhật vui nhộn của</p>
+              <h1>Gòn</h1>
+            </div>
+            <div class="boy-avatar">
+              <div class="avatar-ring">
+                <img
+                  class="avatar-photo"
+                  src="/Users/thanh/Downloads/d22fdfed027a8324da6b.jpg"
+                  alt="Ảnh bé Gòn"
+                />
+              </div>
+            </div>
+          </div>
+          <p class="subcopy">
+            Mời bạn cùng bố mẹ đến dự tiệc sinh nhật của mình nhé.
+          </p>
+          <div class="animal-stage">
+            <img
+              class="hero-art"
+              src="/Users/thanh/Downloads/ChatGPT%20Image%20Aug%201,%202026%20at%2005_29_15%20PM.png"
+              alt="Thiệp động vật sinh nhật"
+            />
+          </div>
+          <div class="venue-card">
+            <p class="venue-label">Thời gian và địa điểm</p>
+            <h3>DINO KINGDOM KIDS CAFE</h3>
+            <p>11 giờ sáng, Chủ nhật ngày 9 tháng 8, 2026</p>
+            <p>38 Đường số 1, KDC Trung Sơn, Bình Hưng, Bình Chánh, TP. HCM</p>
+            <a class="map-link" href="https://share.google/dnRAs9biLVQCWS0mi" target="_blank" rel="noreferrer">
+              Xem Google Map
+            </a>
+          </div>
+        </section>
+
+        <section class="rsvp-panel">
+          <div class="panel-header">
+            <h2>Xác nhận tham dự</h2>
+          </div>
+
+          <label class="name-field" for="family-name">
+            <span>Tên gia đình hoặc tên bé</span>
+            <input id="family-name" type="text" placeholder="Ví dụ: Gia đình Gấu" />
+          </label>
+
+          <div class="choices" role="group" aria-label="Lựa chọn xác nhận">
+            <button class="choice selected" data-choice="yes">Sẽ đến</button>
+            <button class="choice" data-choice="no">Mình không đến được, chúc mừng sinh nhật Gòn nhé</button>
+          </div>
+
+          <div class="guest-box" id="guest-box">
+            <p class="guest-label">Có bao nhiêu người sẽ đến?</p>
+            <div class="counter">
+              <button class="counter-btn" id="minus-btn" aria-label="Giảm số người">-</button>
+              <div class="counter-number" id="guest-count" aria-live="polite">2</div>
+              <button class="counter-btn" id="plus-btn" aria-label="Tăng số người">+</button>
+            </div>
+          </div>
+
+          <button class="confirm-btn" id="confirm-btn">Xác nhận</button>
+
+          <div class="result hidden" id="result" aria-live="polite">
+            <div class="result-badge">Yay!</div>
+            <p id="result-text"></p>
+          </div>
+        </section>
+
+        <section class="guest-list-panel">
+          <div class="panel-header">
+            <h2>Danh sách xác nhận</h2>
+          </div>
+          <div class="reply-list" id="reply-list">
+            <p class="empty-state" id="empty-state">Chưa có phản hồi nào. Hãy là người xác nhận đầu tiên nhé!</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
