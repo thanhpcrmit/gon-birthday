@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Sinh nhật Gòn — 6 tuổi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #FFF3D6; -webkit-font-smoothing: antialiased; }
+  a { color: #E0457B; }
+  a:hover { color: #B92F60; }
+  @keyframes bob { 0%,100% { transform: translateY(0) rotate(-3deg); } 50% { transform: translateY(-10px) rotate(3deg); } }
+  @keyframes bob2 { 0%,100% { transform: translateY(-8px) rotate(4deg); } 50% { transform: translateY(2px) rotate(-3deg); } }
+  @keyframes pop { from { opacity: 0; transform: scale(.9) translateY(10px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+  @keyframes wiggle { 0%,100% { transform: rotate(-5deg); } 50% { transform: rotate(5deg); } }
+</style>
+<template id="__bundler_thumbnail" data-bg-color="#FFF6E5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#FFF6E5"/><circle cx="100" cy="96" r="46" fill="#FFD35C"/><text x="100" y="118" font-family="Baloo 2, cursive" font-size="56" font-weight="800" text-anchor="middle" fill="#2B2140">6</text></svg></template>
+</helmet>
+<div style="min-height: 100vh; background: radial-gradient(circle at 16% 2%, #FFE08A 0%, transparent 44%), radial-gradient(circle at 92% 10%, #A8E6FF 0%, transparent 40%), #FFF3D6; padding: 16px 16px 52px; font-family: Nunito, system-ui, sans-serif; color: #2B2140;">
+  <div style="{{ shellStyle }}">
+
+    <div style="position: relative; padding-top: 8px;">
+      <img src="uploads/animal-1.png" alt="" style="position: absolute; top: 0; left: -4%; width: 26%; animation: bob 5.4s ease-in-out infinite;" />
+      <img src="uploads/animal-2.png" alt="" style="position: absolute; top: 2%; right: -5%; width: 28%; animation: bob2 6s ease-in-out infinite;" />
+      <img src="uploads/animal-3.png" alt="" style="position: absolute; top: 31%; left: -12%; width: 31%; animation: bob 6.6s ease-in-out infinite;" />
+      <img src="uploads/animal-7.png" alt="" style="position: absolute; top: 29%; right: -11%; width: 27%; animation: bob2 5.8s ease-in-out infinite;" />
+
+      <div style="position: relative; z-index: 3; width: 66%; margin: 0 auto; text-align: center;">
+        <div style="display: inline-block; transform: rotate(-2deg); background: #FF6FA5; color: #fff; font-family: 'Baloo 2', cursive; font-size: 20px; font-weight: 700; padding: 8px 20px; border-radius: 999px; box-shadow: 0 5px 0 #E0457B;">Bạn ơi, đi tiệc với mình nhé!</div>
+
+        <div style="{{ photoWrapStyle }}">
+          <div style="position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(#FFD35C, #7ED9A0, #7CC8FF, #FF9CC2, #FFD35C);"></div>
+          <div style="position: absolute; inset: 9px; border-radius: 50%; overflow: hidden; border: 6px solid #fff; box-sizing: border-box; background: #fff; box-shadow: 0 14px 30px rgba(43,33,64,.2);">
+            <img src="uploads/gon-head-cutout.png" alt="Bé Gòn" style="position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 42%; transform: scale(1.06);" />
+          </div>
+          <div style="position: absolute; right: -10px; bottom: 0; background: #FFD35C; color: #2B2140; font-family: 'Baloo 2', cursive; font-size: 32px; font-weight: 800; width: 66px; height: 66px; border-radius: 50%; display: grid; place-items: center; box-shadow: 0 5px 0 #E0A92C; animation: wiggle 3s ease-in-out infinite;">6</div>
+        </div>
+
+        <p style="margin: 18px 0 0; font-size: 17px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #7A6B92;">Sinh nhật của</p>
+        <h1 style="{{ nameStyle }}">Gòn</h1>
+        <p style="margin: 14px 0 0; font-size: 19px; line-height: 1.5; font-weight: 700; color: #4A3D63; text-wrap: pretty;">Mình tròn 6 tuổi rồi! Mời bạn cùng bố mẹ đến chơi, ăn bánh và quậy tưng bừng nha.</p>
+      </div>
+
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 8px; margin-top: 56px;">
+        <img src="uploads/animal-4.png" alt="" style="width: 34%; animation: bob 6.2s ease-in-out infinite;" />
+        <img src="uploads/animal-5.png" alt="" style="width: 31%; margin-bottom: -1%;" />
+        <img src="uploads/animal-6.png" alt="" style="width: 30%; animation: bob2 5.5s ease-in-out infinite;" />
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 18px;">
+      <div style="background: #7CC8FF; border-radius: 30px; padding: 22px 18px; box-shadow: 0 12px 0 #4FA9E8, 0 22px 36px rgba(43,33,64,.16); text-align: center; color: #10365A;">
+        <p style="margin: 0; font-size: 15px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase;">Khi nào &amp; ở đâu</p>
+        <h2 style="margin: 10px 0 0; font-family: 'Baloo 2', cursive; font-size: 34px; line-height: 1.05; font-weight: 800; color: #fff; text-shadow: 0 4px 0 rgba(16,54,90,.3);">Dino Kingdom Kids Cafe</h2>
+        <div style="margin: 14px auto 0; background: #fff; border-radius: 22px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px;">
+          <p style="margin: 0; font-size: 22px; font-family: 'Baloo 2', cursive; font-weight: 700; color: #E0457B;">5 giờ chiều, Thứ Bảy 8/8/2026</p>
+          <p style="margin: 0; font-size: 17px; font-weight: 700; line-height: 1.45; color: #4A3D63;">38 Đường số 1, KDC Trung Sơn, Bình Hưng, Bình Chánh, TP. HCM</p>
+        </div>
+        <a href="https://share.google/dnRAs9biLVQCWS0mi" target="_blank" rel="noreferrer" style="display: block; margin-top: 14px; background: #2B2140; color: #fff; font-family: 'Baloo 2', cursive; font-size: 21px; font-weight: 700; padding: 15px; border-radius: 999px; text-decoration: none; box-shadow: 0 5px 0 rgba(0,0,0,.25);">📍 Mở bản đồ</a>
+      </div>
+
+      <div style="background: #fff; border-radius: 30px; padding: 22px 18px; box-shadow: 0 12px 0 rgba(43,33,64,.07), 0 20px 36px rgba(43,33,64,.14); display: flex; flex-direction: column; gap: 16px;">
+        <h2 style="margin: 0; text-align: center; font-family: 'Baloo 2', cursive; font-size: 32px; font-weight: 800; color: #2B2140;">Bạn có đến không?</h2>
+
+        <label for="family-name" style="display: flex; flex-direction: column; gap: 8px; font-size: 17px; font-weight: 800; color: #4A3D63;">
+          <span>Tên gia đình</span>
+          <input id="family-name" type="text" value="{{ name }}" onChange="{{ onName }}" placeholder="Ví dụ: Gia đình Gấu" style="font: inherit; font-size: 19px; padding: 14px 16px; border: 3px solid #FFD35C; border-radius: 18px; background: #FFFBEE; color: #2B2140; outline: none;" />
+        </label>
+
+        <div style="display: grid; gap: 12px;">
+          <button onClick="{{ pickYes }}" style="{{ yesStyle }}">🎉 Có, mình sẽ đến!</button>
+          <button onClick="{{ pickNo }}" style="{{ noStyle }}">💌 Mình bận mất rồi</button>
+        </div>
+
+        <sc-if value="{{ isYes }}" hint-placeholder-val="{{ true }}">
+          <div style="background: #F3FBEF; border: 3px solid #C9EDBB; border-radius: 24px; padding: 16px; text-align: center;">
+            <p style="margin: 0 0 12px; font-size: 18px; font-weight: 800; color: #35692A;">Cả nhà có mấy người đến nhỉ?</p>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 16px;">
+              <button onClick="{{ dec }}" aria-label="Bớt một người" style="width: 58px; height: 58px; border: 0; border-radius: 20px; background: #7ED9A0; color: #fff; font-size: 32px; font-weight: 800; line-height: 1; cursor: pointer; box-shadow: 0 5px 0 #4FAE73;">−</button>
+              <div style="min-width: 84px; font-family: 'Baloo 2', cursive; font-size: 42px; font-weight: 800; color: #2B2140;">{{ count }}</div>
+              <button onClick="{{ inc }}" aria-label="Thêm một người" style="width: 58px; height: 58px; border: 0; border-radius: 20px; background: #7ED9A0; color: #fff; font-size: 32px; font-weight: 800; line-height: 1; cursor: pointer; box-shadow: 0 5px 0 #4FAE73;">+</button>
+            </div>
+          </div>
+        </sc-if>
+
+        <button onClick="{{ confirm }}" style="margin-top: 6px; border: 0; cursor: pointer; font-family: 'Baloo 2', cursive; font-size: 24px; font-weight: 800; color: #fff; padding: 18px; border-radius: 24px; background: linear-gradient(180deg, #FF8AB6, #FF5D96); box-shadow: 0 6px 0 #D93E76, 0 16px 28px rgba(217,62,118,.3);">Gửi lời nhắn cho Gòn</button>
+
+        <sc-if value="{{ hasResult }}" hint-placeholder-val="{{ false }}">
+          <div style="background: #FFF6D8; border: 3px dashed #FFD35C; border-radius: 24px; padding: 18px; text-align: center; animation: pop 300ms ease;">
+            <div style="font-family: 'Baloo 2', cursive; font-size: 34px; font-weight: 800; color: #E0457B;">{{ resultTitle }}</div>
+            <p style="margin: 8px 0 0; font-size: 18px; font-weight: 700; line-height: 1.5; color: #4A3D63;">{{ resultText }}</p>
+          </div>
+        </sc-if>
+      </div>
+
+      <div style="background: #fff; border-radius: 30px; padding: 22px 18px; box-shadow: 0 12px 0 rgba(43,33,64,.07), 0 20px 36px rgba(43,33,64,.14);">
+        <h2 style="margin: 0 0 14px; text-align: center; font-family: 'Baloo 2', cursive; font-size: 30px; font-weight: 800; color: #2B2140;">Ai sẽ đến chơi?</h2>
+        <sc-if value="{{ noReplies }}" hint-placeholder-val="{{ true }}">
+          <p style="margin: 0; text-align: center; font-size: 17px; font-weight: 700; color: #7A6B92; line-height: 1.5;">Chưa có ai trả lời. Bạn là người đầu tiên nhé!</p>
+        </sc-if>
+        <sc-for list="{{ replies }}" as="r" hint-placeholder-count="2">
+          <div style="{{ r.rowStyle }}">
+            <div>
+              <p style="margin: 0; font-size: 19px; font-weight: 800; color: #2B2140;">{{ r.name }}</p>
+              <p style="{{ r.metaColor }}">{{ r.meta }}</p>
+            </div>
+            <div style="font-size: 30px;">{{ r.emoji }}</div>
+          </div>
+        </sc-for>
+        <sc-if value="{{ hasMore }}" hint-placeholder-val="{{ false }}">
+          <button onClick="{{ toggleAll }}" style="width: 100%; margin-top: 4px; border: 0; cursor: pointer; background: #FFF3D1; color: #7A5A00; font-family: 'Baloo 2', cursive; font-size: 19px; font-weight: 800; padding: 12px; border-radius: 18px;">{{ moreLabel }}</button>
+        </sc-if>
+      </div>
+
+      <p style="margin: 0; text-align: center; font-size: 17px; font-weight: 800; color: #7A6B92;">Hẹn gặp bạn ở bữa tiệc! 🦕🎈</p>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:430,&quot;height&quot;:932}}">
+const KEY = "birthday-rsvps";
+// Paste the Apps Script Web App URL here after deploying (see setup notes).
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbxAhunFv20ooBSTr_p0IaW_LuQCVbHyWv6AdnnWGU7fKHKBnvIlBZEuG24te7JpaD2hBA/exec";
+class Component extends DCLogic {
+  state = { name: "", choice: "yes", count: 3, resultText: "", replies: [], wide: false, showAll: false };
+  fetchSheet() {
+    if (!SHEET_URL) return;
+    fetch(SHEET_URL)
+      .then((r) => r.json())
+      .then((rows) => { if (Array.isArray(rows)) this.setState({ replies: rows }); })
+      .catch(() => {});
+  }
+  componentDidMount() {
+    let list = [];
+    try { list = JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) {}
+    this.fetchSheet();
+    this.mq = window.matchMedia("(min-width: 900px)");
+    this.onMq = () => this.setState({ wide: this.mq.matches });
+    this.mq.addEventListener ? this.mq.addEventListener("change", this.onMq) : this.mq.addListener(this.onMq);
+    this.setState({ replies: list, wide: this.mq.matches });
+  }
+  componentWillUnmount() {
+    if (!this.mq) return;
+    this.mq.removeEventListener ? this.mq.removeEventListener("change", this.onMq) : this.mq.removeListener(this.onMq);
+  }
+  btn(active, bg, shadow) {
+    return {
+      border: 0, cursor: "pointer", padding: "13px 16px", borderRadius: "20px",
+      fontFamily: "'Baloo 2', cursive", fontSize: "19px", fontWeight: 700, lineHeight: 1.25,
+      background: active ? bg : "#F4F1F8", color: active ? "#fff" : "#7A6B92",
+      boxShadow: active ? ("0 5px 0 " + shadow) : "0 5px 0 #DED8E8",
+      transform: active ? "scale(1.02)" : "none", transition: "all 160ms ease"
+    };
+  }
+  renderVals() {
+    const s = this.state, w = s.wide;
+    const size = w ? 250 : 194;
+    return {
+      name: s.name,
+      count: s.count,
+      isYes: s.choice === "yes",
+      hasResult: !!s.resultText,
+      resultText: s.resultText,
+      resultTitle: s.choice === "yes" ? "Yay!" : "Cảm ơn bạn nhé!",
+      noReplies: s.replies.length === 0,
+      hasReplies: s.replies.length > 0,
+      summary: (function () {
+        const yes = s.replies.filter((r) => r.choice === "yes");
+        const people = yes.reduce((n, r) => n + (parseInt(r.count, 10) || 1), 0);
+        const no = s.replies.length - yes.length;
+        return yes.length + " nhà sẽ đến · " + people + " người" + (no ? " · " + no + " lời chúc từ xa" : "");
+      })(),
+      hasMore: s.replies.length > 6,
+      moreLabel: s.showAll ? "Thu gọn ▲" : ("Xem tất cả " + s.replies.length + " lời hồi âm ▼"),
+      toggleAll: () => this.setState({ showAll: !s.showAll }),
+      replies: (function () {
+        const sorted = s.replies.slice().sort((a, b) => (b.choice === "yes") - (a.choice === "yes"));
+        return (s.showAll ? sorted : sorted.slice(0, 6)).map((r, i) => {
+          const yes = r.choice === "yes";
+          return {
+            name: r.name, emoji: yes ? "🎉" : "💌",
+            meta: yes ? (r.count + " người sẽ đến") : "Gửi lời chúc từ xa", key: i,
+            rowStyle: {
+              display: "flex", alignItems: "center", justifyContent: "space-between", gap: "10px",
+              padding: "14px 16px", marginBottom: "10px", borderRadius: "20px",
+              background: yes ? "#FFF2F7" : "#EFF7FF",
+              border: "3px solid " + (yes ? "#FFC7DD" : "#CBE6FB")
+            },
+            metaColor: { margin: "4px 0 0", fontSize: "16px", fontWeight: 700, color: yes ? "#D93E76" : "#3D86BF" }
+          };
+        });
+      })(),
+      shellStyle: {
+        maxWidth: w ? "1140px" : "470px", margin: "0 auto", display: "grid",
+        gridTemplateColumns: w ? "1.08fr 0.92fr" : "1fr",
+        gap: w ? "40px" : "20px", alignItems: w ? "center" : "stretch"
+      },
+      photoWrapStyle: {
+        position: "relative", margin: "16px auto 0", width: size + "px", height: size + "px", zIndex: 3
+      },
+      nameStyle: {
+        margin: "2px 0 0", fontFamily: "'Baloo 2', cursive", fontSize: w ? "112px" : "84px",
+        lineHeight: .95, fontWeight: 800, color: "#2FA85A",
+        textShadow: "0 6px 0 #fff, 0 10px 0 rgba(43,33,64,.14)"
+      },
+      yesStyle: this.btn(s.choice === "yes", "#7ED9A0", "#4FAE73"),
+      noStyle: this.btn(s.choice === "no", "#7CC8FF", "#4FA9E8"),
+      onName: (e) => this.setState({ name: e.target.value }),
+      pickYes: () => this.setState({ choice: "yes", count: Math.max(1, this.state.count) }),
+      pickNo: () => this.setState({ choice: "no" }),
+      inc: () => this.setState({ count: Math.min(12, this.state.count + 1) }),
+      dec: () => this.setState({ count: Math.max(1, this.state.count - 1) }),
+      confirm: () => {
+        const name = (s.name || "").trim() || "Gia đình bạn";
+        const entry = { name, choice: s.choice, count: s.choice === "yes" ? s.count : 0 };
+        let list = [];
+        try { list = JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) {}
+        list.unshift(entry);
+        list = list.slice(0, 20);
+        try { localStorage.setItem(KEY, JSON.stringify(list)); } catch (e) {}
+        if (SHEET_URL) {
+          fetch(SHEET_URL, {
+            method: "POST",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(entry)
+          }).then(() => setTimeout(() => this.fetchSheet(), 800)).catch(() => {});
+        }
+        this.setState({
+          replies: list,
+          resultText: s.choice === "yes"
+            ? (name + " sẽ đến cùng " + s.count + " người. Gòn đang chờ cả nhà đó!")
+            : (name + " gửi lời chúc mừng sinh nhật Gòn!")
+        });
+      }
+    };
+  }
+}
+
+</script>
+</body>
+</html>
